@@ -24,6 +24,7 @@ env:
 
 jobs:
   integration_pipeline:
+    needs: [build]
     uses: jitendra01mishra/integration_pipeline/.github/workflows/python-app.yml@main
     permissions:
       contents: read
