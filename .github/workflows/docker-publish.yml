@@ -27,6 +27,7 @@ jobs:
     uses: jitendra01mishra/integration_pipeline/.github/workflows/python-app.yml@main
     permissions:
       contents: read
+      checks: write
       
   build:
     needs: [integration_pipeline]
